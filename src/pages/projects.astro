@@ -1,0 +1,162 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Daniel Wang - Projects">
+  <br />
+  <p><a href="/">dwang</a>/projects</p>
+  <p><strong>Projects</strong></p>
+
+  <hr />
+
+  <div class="project-section">
+    <h3><a href="/docs/Virtual_Resection_Leading_Eigenvector_Paper.pdf">Predicting Epilepsy Surgery Outcomes via Virtual Resection</a></h3>
+    <p><strong>2025 &middot; Preprint in submission</strong></p>
+    <p>
+      Assesses the leading eigenvector (LEV) of dynamic network models, derived from intracranial
+      EEG (iEEG), as a biomarker for virtual resection efficacy in epilepsy surgery planning.
+      Computational virtual resection — simulating removal of candidate brain regions from
+      patient-specific network models — offers a framework for evaluating proposed surgical plans
+      prior to intervention.
+    </p>
+    <p>
+      Validated on iEEG recordings from 44 patients across four epilepsy centers. LEV attenuation
+      following virtual resection distinguished favorable from unfavorable surgical outcomes,
+      achieving an AUC of 0.8 with 71% accuracy, 74% specificity, and 67% sensitivity.
+    </p>
+    <p>
+      <span class="tag">[<a href="/docs/Virtual_Resection_Leading_Eigenvector_Paper.pdf">Preprint</a>]</span>
+    </p>
+  </div>
+
+  <hr />
+
+  <div class="project-section">
+    <h3>STALC + GCS: Multi-Robot Trajectory Planning</h3>
+    <p><strong>2025 &middot; Work in progress</strong></p>
+    <p>
+      Multi-robot trajectory optimization using a unified STALC (traversal and overwatch coordination)
+      + GCS (Graph of Convex Sets) formulation. Robots navigate through convex regions with Bezier
+      curve trajectories while maintaining formation incentives, overwatch timing constraints, and
+      temporal-spatial collision avoidance. Uses a relaxed-CBS pipeline with candidate path extraction,
+      rounding, and conflict repair.
+    </p>
+    <p>
+      <img src="/docs/iris_gq_robustness_monte-carlo_relaxed_cbs_seed7_trial002_relaxed_cbs_rescued_by_cbs.gif" alt="STALC + GCS simulation" style="max-width: 100%; margin-top: 0.5rem;" />
+    </p>
+    <p>
+      <span class="tag">[<a href="/docs/STALC___GCS.pdf">Formulation Draft</a>]</span>
+    </p>
+  </div>
+
+  <hr />
+
+  <div class="project-section">
+    <h3><a href="https://arxiv.org/abs/2502.10904">Hybrid Brain-Machine Interface: Integrating EEG and EMG</a></h3>
+    <p><strong>2024 - 2025</strong></p>
+    <p>
+      A hybrid brain-machine interface (BMI) that integrates steady-state visually evoked potential
+      (SSVEP)-based EEG and facial EMG to improve multimodal control and mitigate fatigue in assistive
+      applications. The system dynamically alternates between EEG and EMG inputs, using EEG to detect
+      SSVEP signals and EMG from cheek and neck muscles to optimize control based on task demands.
+    </p>
+    <p>
+      In a virtual turtle navigation task, the hybrid system achieved task completion times comparable to
+      an EMG-only approach, while 90% of users reported reduced or equal physical demand.
+    </p>
+    <p>
+      <span class="tag">[<a href="https://arxiv.org/abs/2502.10904">Paper</a>]</span>
+      <span class="tag">[<a href="https://github.com/JHUBCIS/multimodal-bci-robot">GitHub</a>]</span>
+    </p>
+  </div>
+
+  <hr />
+
+  <div class="project-section">
+    <h3><a href="https://github.com/uw-herron-lab/natus-bci">Realtime Natus BCI</a></h3>
+    <p><strong>2024</strong></p>
+    <p>
+      Real-time intracranial electroencephalography data streaming and processing system. Built on
+      the Natus Python SDK to interface with Natus Medical NeuroWorks for clinical and research EEG
+      applications. Includes batch preprocessing pipelines, a motor-imagery BCI task using CSP+LDA
+      classification (~90% accuracy), and an EEG visualizer for real-time channel monitoring.
+    </p>
+    <p>
+      <span class="tag">[<a href="https://github.com/uw-herron-lab/natus-bci">GitHub</a>]</span>
+      <span class="tag">[<a href="/docs/natus-bci-poster.pdf">Poster</a>]</span>
+    </p>
+  </div>
+
+  <hr />
+
+  <div class="project-section">
+    <h3><a href="/docs/thermoptik-patent.pdf">ThermOptik</a></h3>
+    <p><strong>Filed Feb. 2023 &middot; Published Aug. 2024</strong></p>
+    <p>
+      US Patent Application (US 2024/0285428 A1): System and method for dynamic temperature control
+      of the ocular environment during ocular surgery. Features a fluid heater interface module (FHIM)
+      with microcontroller-driven precision temperature regulation of balanced salt solution (BSS),
+      including a heating element, temperature sensor, MOSFET driver, and user interface for real-time
+      outlet temperature adjustment.
+    </p>
+    <p>
+      <span class="tag">[<a href="/docs/thermoptik-patent.pdf">Patent</a>]</span>
+    </p>
+  </div>
+
+  <hr />
+
+  <div class="project-section">
+    <h3>Assistive Technology Projects</h3>
+    <p><strong>2022 - 2023 &middot; JHU Volunteers for Medical Engineering</strong></p>
+    <p>
+      A series of assistive technology devices designed and built in collaboration with community
+      co-designers through the Johns Hopkins Volunteers for Medical Engineering program.
+    </p>
+    <p>
+      <span class="tag">[<a href="https://hub.jhu.edu/2023/05/02/freedom-of-expression-through-engineering/">JHU Hub Article</a>]</span>
+    </p>
+
+    <div class="sub-project">
+      <h4>A Helping Hand</h4>
+      <p>
+        A 3D-printed prosthetic hand designed for Ty, a middle school student born without a right hand.
+        Features a wrist-actuated closing mechanism enabling him to flexibly hold and grab objects.
+        Iteratively prototyped from low-fidelity cardboard models to functional 3D-printed designs,
+        exploring alternative actuation methods including EMG and electronic joysticks.
+      </p>
+      <p>
+        <span class="tag">[<a href="/docs/a-helping-hand.pdf">Documentation</a>]</span>
+      </p>
+    </div>
+
+    <div class="sub-project">
+      <h4>Adaptive Violin Bow Grip ("BOB")</h4>
+      <p>
+        An assistive device for Rose, a student with muscular dystrophy who has inverted thumbs,
+        making it difficult to maintain a proper violin bow grip. The device supports her hand and
+        wrist so she can learn, practice, and maintain a proper bow grip while playing.
+      </p>
+      <p>
+        <span class="tag">[<a href="/docs/adaptive-violin-bow-grip.pdf">Documentation</a>]</span>
+      </p>
+    </div>
+
+    <div class="sub-project">
+      <h4>Wheelchair Umbrella Holder</h4>
+      <p>
+        A 3D-printed umbrella holder for M, a student with brittle bone disease whose wheelchair
+        is not waterproof. The holder attaches to her wheelchair and allows her to stay dry
+        independently without needing to carry the umbrella herself. Iteratively tested for
+        strength, accessibility, and compatibility with different umbrella sizes.
+      </p>
+      <p>
+        <span class="tag">[<a href="/docs/umbrella-holder.pdf">Documentation</a>]</span>
+      </p>
+    </div>
+  </div>
+
+  <hr />
+
+  <p><a href="/">&larr; Back to Home</a></p>
+</BaseLayout>

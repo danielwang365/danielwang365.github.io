@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.astro/
+.claude/
+
+# Ignore root-level PDFs (source copies), keep public/docs/ ones
+/*.pdf
